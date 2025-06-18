@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Sai Rayalla | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="bg-slate-900 text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full h-24 bg-slate-900/90 backdrop-blur-sm z-50 border-b border-slate-800 flex items-center">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex justify-between items-center">
+                <a href="#hero" class="text-xl font-semibold tracking-tight text-white hover:text-cyan-400 transition-colors">Pavan Sai Rayalla</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://drive.google.com/file/d/12ctHvAzfRFwjDCE51by8x1FCr2XXcrJv/view?usp=sharing" class="text-xl text-slate-300 hover:text-cyan-400 transition-colors" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a href="#projects" class="text-xl text-slate-300 hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#skills" class="text-xl text-slate-300 hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#experience" class="text-xl text-slate-300 hover:text-cyan-400 transition-colors">Experience</a>
+                    <a href="#education" class="text-xl text-slate-300 hover:text-cyan-400 transition-colors">Education</a>
+                    <a href="#contact" class="text-xl text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+                <button id="menu-toggle" class="md:hidden text-white focus:outline-none p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden">
+                <a href="#projects" class="mobile-link">Projects</a>
+                <a href="#skills" class="mobile-link">Skills</a>
+                <a href="#education" class="mobile-link">Education</a>
+                <a href="#experience" class="mobile-link">Experience</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div id="particles-js"></div>
+    <div class="container mx-auto px-4 md:px-6 z-10 text-center relative">
+  
+      <!-- Profile Image -->
+      <div class="mb-8">
+        <img src="ProfilePic.png" alt="Pavan Sai Rayalla" class="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto border-4 border-cyan-500/30 shadow-lg hero-avatar">
+      </div>
+  
+      <!-- Name and Subtitle -->
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 text-white">Hello, I'm Pavan Sai Rayalla 👋</h1>
+      <h2 class="text-lg md:text-2xl font-medium text-cyan-400 mb-6">
+        M.S. CS @ SUNY Buffalo | AI/ML | Data Science | Cloud
+      </h2>
+  
+      <!-- Bio -->
+      <p class="text-slate-300 text-lg md:text-xl mt-6 max-w-4xl mx-auto">
+        Architecting intelligent systems at the intersection of
+        <span class="text-cyan-400 font-semibold">Generative AI</span>,
+        <span class="text-cyan-400 font-semibold">LLMs</span>, and
+        <span class="text-cyan-400 font-semibold">cloud-native MLOps</span>.
+        My focus spans <span class="text-cyan-400 font-semibold">multi-modal models</span>,
+        <span class="text-cyan-400 font-semibold">RAG pipelines</span>,
+        <span class="text-cyan-400 font-semibold">LoRA fine-tuning</span>,
+        and <span class="text-cyan-400 font-semibold">LangChain-powered agents</span>.
+        I build scalable AI solutions with
+        <span class="text-cyan-400 font-semibold">Transformers</span>,
+        <span class="text-cyan-400 font-semibold">AutoML</span>, and
+        <span class="text-cyan-400 font-semibold">streaming inference APIs</span>,
+        deployed via <span class="text-cyan-400 font-semibold">Docker</span>,
+        <span class="text-cyan-400 font-semibold">Kubernetes</span>, and
+        <span class="text-cyan-400 font-semibold">AWS SageMaker</span>.
+        Passionate about bringing
+        <span class="text-cyan-400 font-semibold">prompt engineering</span>,
+        <span class="text-cyan-400 font-semibold">vector search</span>, and
+        <span class="text-cyan-400 font-semibold">retrieval-personalization</span>
+        into real-world production.
+      </p>
+  
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center gap-6 mt-16">
+  <!-- GitHub -->
+  <a href="https://github.com/PavanSai-Rayalla" target="_blank"
+     class="bg-slate-800 hover:bg-slate-700 px-8 py-4 text-xl text-white rounded-full transition-all inline-flex items-center justify-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.24c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23.96-.27 1.98-.41 3-.41s2.04.14 3 .41c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.47 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+    </svg>
+    GitHub
+  </a>
+
+  
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/pavan-sai-rayalla/" target="_blank"
+     class="bg-slate-800 hover:bg-slate-700 px-8 py-4 text-xl text-white rounded-full transition-all inline-flex items-center justify-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 
+               0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zm-11 19H5v-9h3v9zm-1.5-10.28c-.97 
+               0-1.75-.78-1.75-1.75S5.53 5.22 6.5 5.22c.97 0 1.75.78 
+               1.75 1.75s-.78 1.75-1.75 1.75zM20 19h-3v-4.5c0-1.12-.9-2-2-2s-2 
+               .88-2 2V19h-3v-9h3v1.12c.59-.69 1.5-1.12 2.5-1.12 
+               1.93 0 3.5 1.57 3.5 3.5V19z"/>
+    </svg>
+    LinkedIn
+  </a>
+  
+  <!-- Email -->
+  <a href="mailto:rayallapavansai@gmail.com"
+     class="bg-slate-800 hover:bg-cyan-600 px-8 py-4 text-xl text-white rounded-full transition-all inline-flex items-center justify-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 
+               2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
+               4-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+    Email
+  </a>
+</div>
+    </div>
+  </section>
+  
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-slate-900 rounded-xl overflow-hidden shadow-lg">
+                    <div class="overflow-hidden">
+                        <img src="RAG.png" alt="RAG-Based Query System" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">RAG-Based Query System</h3>
+                        <p class="text-slate-300 mb-4 leading-relaxed">Retrieval-augmented generation pipeline using BERT, FAISS, and Hugging Face Transformers. Achieved 90% accuracy on 1M+ pairs, reduced latency by 25%.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="skill-tag px-3 py-1 bg-blue-900/40 text-blue-400 rounded-full text-xs">Python</span>
+                            <span class="skill-tag px-3 py-1 bg-yellow-900/40 text-yellow-400 rounded-full text-xs">Hugging Face</span>
+                            <span class="skill-tag px-3 py-1 bg-green-900/40 text-green-400 rounded-full text-xs">FAISS</span>
+                            <span class="skill-tag px-3 py-1 bg-purple-900/40 text-purple-400 rounded-full text-xs">BERT</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/PavanSai-Rayalla" target="_blank" class="btn-secondary px-4 py-2 rounded-md text-sm flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-md text-sm flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                    <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                </svg>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-slate-900 rounded-xl overflow-hidden shadow-lg">
+                    <div class="overflow-hidden">
+                        <img src="MRE.jpg" alt="Multimodal Recommendation Engine" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">Multimodal Recommendation Engine</h3>
+                        <p class="text-slate-300 mb-4 leading-relaxed">TensorFlow dual-encoder model fusing text and metadata for product recommendation. Trained on 500K+ items with contrastive loss. Deployed with ONNX.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="skill-tag px-3 py-1 bg-orange-900/40 text-orange-400 rounded-full text-xs">TensorFlow</span>
+                            <span class="skill-tag px-3 py-1 bg-cyan-900/40 text-cyan-400 rounded-full text-xs">ONNX</span>
+                            <span class="skill-tag px-3 py-1 bg-indigo-900/40 text-indigo-400 rounded-full text-xs">NumPy</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/PavanSai-Rayalla" target="_blank" class="btn-secondary px-4 py-2 rounded-md text-sm flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-md text-sm flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                    <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                </svg>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4 md:px-6">
+          <h2 class="text-3xl font-bold mb-12 text-center text-white">Skills</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+<!-- Programming Languages -->
+<div class="skill-category p-6 rounded-xl border border-slate-700">
+    <h3 class="text-xl font-bold mb-4 text-cyan-400">Programming Languages</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="inline-flex items-center gap-2 bg-blue-800/50 text-blue-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-blue-400/30 transition">
+        <i class="devicon-python-plain text-white text-xl"></i> Python
+      </span>
+      <span class="inline-flex items-center gap-2 bg-orange-800/50 text-orange-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-orange-400/30 transition">
+        <i class="devicon-mysql-plain text-white text-xl"></i> SQL
+      </span>
+      <span class="inline-flex items-center gap-2 bg-red-800/50 text-red-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-red-400/30 transition">
+        <i class="devicon-java-plain text-white text-xl"></i> Java
+      </span>
+      <span class="inline-flex items-center gap-2 bg-cyan-800/50 text-cyan-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-cyan-400/30 transition">
+        <i class="devicon-go-original text-white text-xl"></i> Go
+      </span>
+      <span class="inline-flex items-center gap-2 bg-yellow-800/50 text-yellow-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-yellow-400/30 transition">
+        <i class="devicon-bash-plain text-white text-xl"></i> Bash
+      </span>
+    </div>
+  </div>
+  
+      
+<!-- Frameworks & Tools -->
+<div class="skill-category p-6 rounded-xl border border-slate-700">
+    <h3 class="text-xl font-bold mb-4 text-green-400">Frameworks & Tools</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="inline-flex items-center gap-2 bg-orange-800/50 text-orange-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-orange-400/30 transition">
+        <i class="devicon-pytorch-original text-white text-xl"></i> PyTorch
+      </span>
+      <span class="inline-flex items-center gap-2 bg-blue-800/50 text-blue-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-blue-400/30 transition">
+        <i class="devicon-tensorflow-original text-white text-xl"></i> TensorFlow
+      </span>
+      <span class="inline-flex items-center gap-2 bg-green-800/50 text-green-300 px-4 py-2 rounded-full text-lg">
+        FastAPI
+      </span>
+      <span class="inline-flex items-center gap-2 bg-red-800/50 text-red-300 px-4 py-2 rounded-full text-lg">
+        Streamlit
+      </span>
+      <span class="inline-flex items-center gap-2 bg-purple-800/50 text-purple-300 px-4 py-2 rounded-full text-lg">
+        Apache Kafka
+      </span>
+      <span class="inline-flex items-center gap-2 bg-yellow-800/50 text-yellow-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-yellow-400/30 transition">
+        <i class="devicon-git-plain text-white text-xl"></i> Git
+      </span>
+      <span class="inline-flex items-center gap-2 bg-blue-800/50 text-blue-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-blue-400/30 transition">
+        <i class="devicon-docker-plain text-white text-xl"></i> Docker
+      </span>
+      <span class="inline-flex items-center gap-2 bg-cyan-800/50 text-cyan-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-cyan-400/30 transition">
+        <i class="devicon-react-original text-white text-xl"></i> React
+      </span>
+    </div>
+  </div>
+  
+      
+<!-- Cloud & Infra -->
+<div class="skill-category p-6 rounded-xl border border-slate-700">
+    <h3 class="text-xl font-bold mb-4 text-purple-400">Cloud & Infra</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="inline-flex items-center gap-2 bg-blue-800/50 text-blue-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-blue-400/30 transition">
+        <i class="devicon-azure-plain text-white text-xl"></i> Azure
+      </span>
+      <span class="inline-flex items-center gap-2 bg-red-800/50 text-red-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-red-400/30 transition">
+        <i class="devicon-googlecloud-plain text-white text-xl"></i> GCP
+      </span>
+      <span class="inline-flex items-center gap-2 bg-purple-800/50 text-purple-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-purple-400/30 transition">
+        <i class="devicon-terraform-plain text-white text-xl"></i> Terraform
+      </span>
+      <span class="inline-flex items-center gap-2 bg-green-800/50 text-green-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-green-400/30 transition">
+        <i class="devicon-jenkins-line text-white text-xl"></i> Jenkins
+      </span>
+    </div>
+  </div>
+  
+      
+<!-- Data & ML -->
+<div class="skill-category p-6 rounded-xl border border-slate-700">
+    <h3 class="text-xl font-bold mb-4 text-yellow-400">Data & ML</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="inline-flex items-center gap-2 bg-blue-800/50 text-blue-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-blue-400/30 transition">
+        Pandas
+      </span>
+      <span class="inline-flex items-center gap-2 bg-yellow-800/50 text-yellow-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-yellow-400/30 transition">
+        Hugging Face
+      </span>
+      <span class="inline-flex items-center gap-2 bg-green-800/50 text-green-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-green-400/30 transition">
+        MLflow
+      </span>
+      <span class="inline-flex items-center gap-2 bg-cyan-800/50 text-cyan-300 px-4 py-2 rounded-full text-lg shadow hover:shadow-cyan-400/30 transition">
+        FAISS
+      </span>
+    </div>
+  </div>
+  
+      </section>
+      
+<!-- Experience Section --> 
+<section id="experience" class="py-20 bg-slate-800">
+    <div class="container mx-auto px-4 md:px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center text-white">Experience</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  
+        <!-- Experience 1 -->
+        <div class="bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition">
+          <div class="overflow-hidden">
+            <img src="LABCORP.png" alt="Labcorp" class="w-full h-48 object-contain bg-white p-6">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-white">Labcorp</h3>
+            <p class="text-cyan-400 text-lg mb-4">Data Analyst (Feb 2024 – July 2024)</p>
+            <ul class="list-disc list-inside text-slate-300 text-base space-y-2 mb-6">
+                <li>Built ML models in Python to predict system downtimes with 95% accuracy.</li>
+                <li>Optimized PySpark pipelines, cutting processing time by 40%.</li>
+                <li>Created dashboards to visualize insights from LLM-based analytics.</li>
+              </ul>              
+            <div class="text-slate-400 text-base">Bangalore, India</div>
+          </div>
+        </div>
+  
+        <!-- Experience 2 -->
+        <div class="bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition">
+          <div class="overflow-hidden">
+            <img src="AKRO.jpg" alt="Akro IT Technologies" class="w-full h-48 object-contain bg-white p-6">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-white">Akro IT Technologies</h3>
+            <p class="text-cyan-400 text-lg mb-4">Software Developer (Jan 2023 – Apr 2023)</p>
+            <ul class="list-disc list-inside text-slate-300 text-base space-y-2 mb-6">
+                <li>Developed responsive dashboards using React and Tailwind CSS.</li>
+                <li>Integrated secure REST APIs with JWT authentication support.</li>
+                <li>Improved frontend load time and interactivity by 20%.</li>
+              </ul>              
+            <div class="text-slate-400 text-base">Hyderabad, India</div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+
+<!-- Education Section -->
+<section id="education" class="py-20 bg-slate-900">
+    <div class="container mx-auto px-4 md:px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center text-white">Education</h2>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+  
+        <!-- SUNY Buffalo -->
+        <div class="education-card bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition">
+          <div class="overflow-hidden">
+            <img src="UB3.png" alt="SUNY Buffalo" class="w-full h-44 object-contain bg-white p-4">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-white">SUNY Buffalo, New York</h3>
+            <p class="text-cyan-400 text-lg mb-4">M.S. in Computer Science</p>
+            <div class="flex justify-between text-slate-400 text-lg font-medium">
+              <span>Aug 2024 – Dec 2025</span>
+              <span>GPA: 3.3</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Jain University -->
+        <div class="education-card bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition">
+          <div class="overflow-hidden">
+            <img src="JAIN.png" alt="Jain University" class="w-full h-44 object-contain bg-white p-4">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-white">Jain University, India</h3>
+            <p class="text-cyan-400 text-lg mb-4">B.Tech in Computer Science and Engineering</p>
+            <div class="flex justify-between text-slate-400 text-lg font-medium">
+              <span>Sept 2020 – Jun 2024</span>
+              <span>GPA: 3.6</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Contact Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- Contact Information -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold mb-6 text-white">Get in Touch</h3>
+                    <div class="contact-info-item flex items-center space-x-4">
+                        <div class="bg-slate-700 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Email</p>
+                            <a href="mailto:rayallapavansai@gmail.com" class="text-cyan-400 hover:underline">rayallapavansai@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item flex items-center space-x-4">
+                        <div class="bg-slate-700 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">GitHub</p>
+                            <a href="https://github.com/PavanSai-Rayalla" target="_blank" class="text-cyan-400 hover:underline">github.com/PavanSai-Rayalla</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item flex items-center space-x-4">
+                        <div class="bg-slate-700 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Location</p>
+                            <p class="text-white">New York, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                
+                <!-- Contact Form -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-700">
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="form-control w-full px-4 py-2 rounded-md" placeholder="Your name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-slate-400 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="form-control w-full px-4 py-2 rounded-md" placeholder="your@email.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-slate-400 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-control w-full px-4 py-2 rounded-md" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn w-full px-6 py-3 text-white rounded-md transition-colors font-medium">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <p class="text-slate-400">© 2025 Pavan Sai Rayalla. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
